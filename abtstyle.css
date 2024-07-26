@@ -1,0 +1,315 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+#mobile
+{
+    display: none;
+}
+
+.column {
+    flex-basis: 48%;
+}
+
+.column img {
+    width: 75%;
+    height: 400px;
+    margin-left: 85px;
+}
+
+/* #Picture2
+{
+    margin-left: 0px;
+    margin-right: 20px;
+    width: 75%;
+    height: 75%;
+} */
+
+/* #navbar ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;     
+}
+
+.selected{
+    background-color: black;
+    
+}   
+.selected a{
+    color: white;
+}
+#navbar a{
+    
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+#navbar li{
+    float: left; 
+    border-right: solid 1px black;
+    Width: 100px;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    
+}
+
+#navbar a:hover{
+    background-color: black;    
+    color: white;
+}
+#navbar{
+    background-color: #fdbb2d;
+    padding: 5px;
+    border-bottom: solid 1px black;
+} */
+
+body{
+    /* background: linear-gradient(7deg, rgba(34,193,195,1) 0%, rgba(253,187,45,0.41789215686274506) 100%); */
+    background: azure;
+}
+
+.hidden
+{
+    opacity: 0;
+    filter: blur(5px);
+    transition: all 2s;
+    transform: translateX(-100%);
+}
+
+.show
+{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'manrope', sans-serif;
+} 
+nav{
+  position: fixed;    
+  display: flex;
+  height: 80px;
+  width: 100%;
+  background: #1b1b1b;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 100px;
+  flex-wrap: wrap;
+  z-index: 1000;
+}
+nav .logo{
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+}
+nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+nav ul li{
+  margin: 0 5px;
+}
+nav ul li a{
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+nav ul li a.active,
+nav ul li a:hover{
+  color: #111;
+  background: #fff;
+}
+nav .menu-btn i{
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+
+input[type="checkbox"]{
+  display: none;
+}
+
+
+@media (max-width: 1000px){
+  nav{
+    padding: 0 40px 0 50px;
+  }
+  #mobile{
+    display: block;
+  }
+}
+@media (max-width: 920px) {
+  nav .menu-btn i{
+    display: block;
+  }
+  #click:checked ~ .menu-btn i:before{
+    content: "\f00d";
+  }
+  nav ul{
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    background: #000000;
+    /* opacity: 1; */
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  #click:checked ~ ul{
+    left: 0;
+  }
+  nav ul li{
+    width: 100%;
+    margin: 40px 0;
+  }
+  nav ul li a{
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  #click:checked ~ ul li a{
+    margin-left: 0px;
+  }
+  nav ul li a.active,
+  nav ul li a:hover{
+    background: none;
+    color: cyan;
+  }
+}
+.content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: -1;
+  width: 100%;
+  padding: 0 30px;
+  color: #1b1b1b;
+}
+.content div{
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.mob
+{
+    display: none;
+}
+
+.icon
+  {
+     width: 50px;
+     height: 50px;
+  }
+
+
+
+
+@media (max-width: 920px) {
+
+    .mob
+    {
+        display: block;
+    }
+
+    .container {
+        display: block;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    #mobile{
+        display: block;
+    }
+
+    #desktop{
+        display: none;
+    }
+
+    
+
+    /* #Picture2
+    {
+        margin-left: 80px;
+        margin-right: 0px;
+        width: 200px;
+        height: 200px;
+    } */
+
+    #footer
+    {
+      display: flex;
+        justify-content: space-between;
+        padding: 0px;
+        
+    } 
+
+    hr{
+      margin-top: 10px;
+  }
+  
+   
+  
+  .icon
+  {
+     width: 25px;
+     height: 25px;
+  }
+  
+  #insta
+  {
+    margin-left: 0px;
+  }
+  
+  .follow
+  {
+    padding-right: 10px;
+  
+  }
+  .email{
+    padding-left: 10px;
+  }
+
+  .column img {
+    width: 180px;
+    height: 180px;
+    margin-left: 110px;
+}
+  
+  
+    
+
+}
+
+img
+{
+    z-index: 1;
+}
+
+#main{
+  margin-top: 50px;
+}
+
+
+
+

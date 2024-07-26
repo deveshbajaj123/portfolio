@@ -1,0 +1,448 @@
+/* .column1 
+{
+    float: right;
+    width: 50%;
+    padding: 10px;
+}
+
+.column2 
+{
+    float: left;
+    width: 50%;
+    /* margin-bottom: 180px;
+    margin-left: 150px; */
+
+body{
+    /* background: linear-gradient(7deg, rgba(34,193,195,1) 0%, rgba(253,187,45,0.41789215686274506) 100%); */
+    background-color: azure;
+  
+}
+
+/* .manrope-fon {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+} */
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.column {
+    flex-basis: 48%;
+}
+
+/* #Picture2{
+    margin-right: 50px;
+} */
+
+
+.mob
+{
+    display: none;
+}
+
+#Picture
+{
+    border-radius: 50%;
+    border: solid 1px black;
+    height: 350px;
+    width: 330px;
+    /* margin-left: 350px; */
+    /* margin-bottom: 200px;  */
+    margin-top: 200px;
+    margin-left: 220px;
+}
+  
+  /* Clear floats after the columns */
+  /* .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  } */
+
+/* #navbar ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;     
+}
+
+.selected{
+    background-color: black;
+    
+}   
+.selected a{
+    color: white;
+}
+#navbar a{
+    
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+#navbar li{
+    float: left; 
+    border-right: solid 1px black;
+    Width: 100px;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    
+}
+
+#navbar a:hover{
+    background-color: black;    
+    color: white;
+}
+#navbar{
+    background-color: rgb(75, 176, 216);
+    padding: 5px;
+    border-bottom: solid 1px black;
+} */
+
+hr{
+    margin-top: 400px;
+}
+#bbar
+{
+    /* margin-top: 150px; */
+    margin-left: 600px;
+    overflow: hidden;
+    float: left;
+    
+}
+#bbar button
+{
+    margin: 35px;
+    width: 135px;
+    height: 135px;
+    border-radius: 50%;
+    font-size: 20px;
+    
+    color: black;
+    border-width: 1px;
+    z-index: -5;
+}
+
+#myresume
+{
+   background-color: rgb(241, 207, 34);
+}
+
+#myprojects
+{
+   background-color: rgb(234, 8, 8);
+}
+
+#contactme
+{
+   background-color: rgb(8, 234, 8);
+}
+
+#bbar button:hover
+{
+    
+    background-color: white;
+    color: black;
+}
+
+
+.rtside
+{
+    margin-top: 20px;
+}
+
+#foot p{
+    margin-top: 20px;
+}
+
+.text 
+{
+    margin-top: 110px;
+}
+
+.text h1
+{
+    
+    font-size: 60px;
+}
+
+.text p
+{
+    margin-top: 60px;
+    /* border: solid 1px black; */
+}
+
+
+#insta
+{
+    margin-left: 0px;
+}
+
+.follow{
+  padding-right: 0px;
+}
+.email{
+   padding-left: 0px;
+}
+
+.hidden
+{
+    opacity: 0;
+    filter: blur(5px);
+    transition: all 2s;
+    transform: translateX(-100%);
+}
+
+.show
+{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.but:nth-child(2){
+    transition-delay: 0.5s;
+}
+
+.but:nth-child(1){
+    transition-delay: 1s;
+}
+
+.hid
+{
+    opacity: 0;
+    filter: blur(5px);
+    transition: all 2s;
+    transform: translateX(100%);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'manrope', sans-serif;
+} 
+nav{
+  position: fixed;
+  display: flex;
+  height: 80px;
+  width: 100%;
+  background: #1b1b1b;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 100px;
+  flex-wrap: wrap;
+  z-index: 1000;
+}
+nav .logo{
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+}
+nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+nav ul li{
+  margin: 0 5px;
+}
+nav ul li a{
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+nav ul li a.active,
+nav ul li a:hover{
+  color: #111;
+  background: #fff;
+}
+nav .menu-btn i{
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+input[type="checkbox"]{
+  display: none;
+}
+@media (max-width: 1000px){
+  nav{
+    padding: 0 40px 0 50px;
+  }
+}
+@media (max-width: 920px) {
+  nav .menu-btn i{
+    display: block;
+  }
+  #click:checked ~ .menu-btn i:before{
+    content: "\f00d";
+  }
+  nav ul{
+    position: fixed; 
+    top: 80px;
+    left: -100%;
+    background: #111;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+    z-index: 1000;
+  }
+  #click:checked ~ ul{
+    left: 0;
+  }
+  nav ul li{
+    width: 100%;
+    margin: 40px 0;
+  }
+  nav ul li a{
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+   #click:checked ~ ul li a{
+    margin-left: 0px;     
+  } 
+
+  
+   /* #bbar{
+    opacity: 0;   
+  }  */
+
+
+  nav ul li a.active,
+  nav ul li a:hover{
+    background: none;
+    color: cyan;    
+  }
+  
+}
+.content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: -1;
+  width: 100%;
+  padding: 0 30px;
+  color: #1b1b1b;
+}
+.content div{
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.nxtl{
+    display: none;
+}
+
+.icon{
+  width: 50px;
+  height: 50px;
+}
+
+/* #fixed{
+  position: fixed;
+} */
+
+@media (max-width: 920px) {
+    .container {
+        display: block;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    #bbar
+  {
+    /* margin-top: 150px; */
+     margin-left: 110px; 
+   
+    float: none;
+  }
+
+
+
+#Picture
+ {
+    border-radius: 50%;
+    border: solid 1px black;
+    height: 350px;
+    width: 330px;
+    /* margin-left: 350px; */
+    /* margin-bottom: 200px;  */
+    margin-top: 80px;
+    margin-left: 15px;
+ }
+
+
+
+#bbar button
+ {
+    margin: 15px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    font-size: 10px;
+    
+    color: black;
+    border-width: 1px;
+}
+
+.nxtl{
+    display: block;
+  }
+
+hr{
+    margin-top: 10px;
+}
+
+ #footer
+{
+  display: flex;
+    justify-content: space-between;
+    padding: 0px;
+    
+} 
+
+.icon
+{
+   width: 25px;
+   height: 25px;
+}
+
+#insta
+{
+  margin-left: 0px;
+}
+
+.follow
+{
+  padding-right: 10px;
+
+}
+.email{
+  padding-left: 10px;
+}
+
+.mob
+{
+    display: block;
+
+}
+}
