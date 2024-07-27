@@ -10,16 +10,330 @@
     </body>
 </html>  -->
 
-<html>
+<!-- <html>
     <head>
-        <title>Resume</title>        
+        <title>Resume</title> 
+        <style>
+            #btn{
+                margin-left: 210px; 
+                margin-top: 70px;
+                height: 50px;
+                width: 150px;
+            }
+            img{
+                position: fixed;
+            }
+        </style>       
     </head>
     <body>
-        <a href="resume.pdf" download="deveshresume">
-            click here to download my resume
-          </a>
+        <a href="resume.pdf" download="deveshresume"><button id = "btn">Download my resume</button></a>
+
+        <br>
+        <br>
+
+        <img src = "click-here-gif-4.gif" alt = "Click here to download"> -->
+        
+        
          
-      
+        
+           
+          
+<!--       
     </body>
+</html> -->
+
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <script defer src = "script.js"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+    </style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.container1 {
+  /* position: relative; */
+  /* width: 100%;
+   max-width: 400px; */
+   margin-top: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.container1 img {
+  width: 100%;
+  height: auto;
+  
+}
+
+.container1 .btn {
+  /* position: absolute; */
+  top: 50%;
+  left: 50%;
+  /* transform: translate(-60%, -140%); */
+  /* -ms-transform: translate(-50%, -50%);  */
+  background-color: wheat;
+  color: black;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  margin-bottom: 60px;
+  z-index: -1;
+  margin-left: 165px;
+  margin-top: 50px;
+}
+
+.container1 .btn:hover {
+  background-color: black;
+  color: white;
+
+}
+
+.container1{
+    /* transform: translate(115%, 200%); */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'manrope', sans-serif;
+} 
+nav{
+  /* position: fixed;     */
+  display: flex;
+  height: 80px;
+  width: 100%;
+  background: #1b1b1b;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 100px;
+  flex-wrap: wrap;
+  z-index: 1000;
+}
+nav .logo{
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+}
+nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  z-index: 1000;
+}
+nav ul li{
+  margin: 0 5px;
+}
+nav ul li a{
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+nav ul li a.active,
+nav ul li a:hover{
+  color: #111;
+  background: #fff;
+}
+nav .menu-btn i{
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+
+input[type="checkbox"]{
+  display: none;
+}
+
+
+@media (max-width: 1000px){
+  nav{
+    padding: 0 40px 0 50px;
+    margin-bottom: 0px;
+  }
+  #mobile{
+    display: block;
+  }
+}
+@media (max-width: 920px) {
+
+  .container1 .btn{
+
+    margin-left: 0px;
+    margin-bottom: 0px;
+
+  }
+
+  nav .menu-btn i{
+    display: block;
+  }
+  .icon{
+    height: 25px;
+    width: 25px;
+  }
+  #click:checked ~ .menu-btn i:before{
+    content: "\f00d";
+  }
+  nav ul{
+    position: fixed; 
+    top: 80px;
+    left: -100%;
+    background: #000000;
+    /* opacity: 1; */
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  #click:checked ~ ul{
+    left: 0;
+  }
+  nav ul li{
+    width: 100%;
+    margin: 40px 0;
+  }
+  nav ul li a{
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  #click:checked ~ ul li a{
+    margin-left: 0px;
+  }
+  nav ul li a.active,
+  nav ul li a:hover{
+    background: none;
+    color: cyan;
+  }
+
+  .hr{
+    margin-top: 50px;
+  }
+
+  #bot{
+    margin-top: 500px;
+}
+
+}
+
+body
+{
+    background-color: azure;
+}
+
+#footer
+    {
+      display: flex;
+        justify-content: space-between;
+        padding: 0px;
+        
+    } 
+
+    
+.icon
+{
+    height: 50px;
+    width:50px;
+}
+
+
+</style>
+</head>
+<body>
+
+
+    
+        <nav>
+          <!-- <div class="logo">Brand</div> -->
+          <div>
+            <input type="checkbox" id="click" class = "mob">
+            <label for="click" class="menu-btn" class = "mob">
+              <i class="fas fa-bars" class = "mob"></i>
+          </label> 
+          
+          
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a  class="active" href="resume.html">Resume</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            
+          </ul>
+        </nav>
+        
+      
+
+<div class="container1">
+    <a href="resume.pdf" download="deveshresume"><button class="btn">Download my resume</button></a>
+ <img src="click-here-gif-4.gif" alt="Snow" style="width:100%">
+</div>
+
+
+<br>
+<br>
+
+
+
+<hr id = "bot">
+
+<div class = "container" id = "footer">
+
+
+                    <div class = "email">
+                      <b>Email</b>
+                      <br>
+                      <a href="mailto:deveshbajaj9@gmail.com?subject=Inquiry&body=Hello,%20I%20would%20like%20to%20know%20more%20about%20your%20services.">
+                        <img src="icons8-email-48.png" alt="Email" class = "icon">
+                      </a>
+                      
+                    </div>
+
+                    
+                
+                    <div class = "follow" id = "footleft">
+                
+                      <b>Follow me</b>
+                      
+                      <br>
+                
+                      <a href="https://github.com/deveshbajaj123">
+                        <img src="icons8-github-30.png" alt="LinkedIn" class = "icon">
+                        </a>
+                
+                      <a href="https://www.linkedin.com/in/devesh-bajaj-1b1b3b1b1/">
+                        <img src="icons8-linkedin-48.png" alt="LinkedIn" class = "icon">
+                
+                      </a>
+                
+                      <a href="https://www.linkedin.com/in/devesh-bajaj-1b1b3b1b1/">
+                        <img id = "insta" src="insta new.png" alt="LinkedIn" class = "icon">
+                
+                      </a>
+                        
+                    
+                    </div>
+
+                    </div>
+
+        
+
+</body>
 </html>
 
