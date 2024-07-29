@@ -481,3 +481,27 @@ hr{
 .but{
   cursor: pointer;
 }
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+    #Picture
+    {
+      margin-left: 200px;
+       margin-top: 200px; 
+    }
+
+    #bbar
+    {
+      margin-left: 280px;
+    }
+
+    #bbar button{
+      height: 200px;
+      width: 200px;
+    }
+
+}
