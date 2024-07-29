@@ -47,13 +47,12 @@ body{
 #Picture
 {
     border-radius: 50%;
-    border: solid 1px black;
-    height: 350px;
-    width: 330px;
+    border: solid 3px black;
+    height: 550px;
+    width: 550px;
     /* margin-left: 350px; */
     /* margin-bottom: 200px;  */
     margin-top: 200px;
-    margin-left: 220px;
 }
   
   /* Clear floats after the columns */
