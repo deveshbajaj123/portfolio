@@ -47,13 +47,12 @@ body{
 #Picture
 {
     border-radius: 50%;
-    border: solid 1px black;
-    height: 350px;
-    width: 330px;
+    border: solid 3px black;
+    height: 550px;
+    width: 550px;
     /* margin-left: 350px; */
     /* margin-bottom: 200px;  */
     margin-top: 200px;
-    margin-left: 220px;
 }
   
   /* Clear floats after the columns */
@@ -117,8 +116,10 @@ hr{
 #bbar button
 {
     margin: 35px;
+
     width: 115px;
     height: 115px;
+
     border-radius: 50%;
     font-size: 20px;
     
@@ -481,3 +482,29 @@ hr{
 .but{
   cursor: pointer;
 }
+
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+    #Picture
+    {
+      margin-left: 200px;
+       margin-top: 200px; 
+    }
+
+    #bbar
+    {
+      margin-left: 280px;
+    }
+
+    #bbar button{
+      height: 200px;
+      width: 200px;
+    }
+
+}
+
