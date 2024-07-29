@@ -116,8 +116,10 @@ hr{
 #bbar button
 {
     margin: 35px;
-    width: 180px;
-    height: 180px;
+
+    width: 115px;
+    height: 115px;
+
     border-radius: 50%;
     font-size: 20px;
     
@@ -481,6 +483,7 @@ hr{
   cursor: pointer;
 }
 
+
 @media only screen 
   and (min-device-width: 768px) 
   and (max-device-width: 1024px) 
@@ -504,3 +507,4 @@ hr{
     }
 
 }
+
